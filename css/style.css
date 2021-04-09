@@ -1,0 +1,416 @@
+/*
+    Code by: Skz
+    Real Name: Benjamin B.
+    Creator's company name: Sensity
+    Company website: www.sensity.net
+    Support email: support@sensity.net
+*/
+
+@import url('https://font.googleapis.com/css?family=Roboto:500');
+@import url('https://font.googleapis.com/css?family=Lato:500');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: #ffffff;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card {
+    background: #313139;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-buttons button {
+    background: #313139;
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    transition-duration: 0.4s;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+
+    white-space: normal;
+
+    cursor: pointer;
+
+    letter-spacing: 1px;
+}
+
+.left-buttons button:hover {
+    background: #37373f;
+    transition-duration: 0.4s;
+}
+
+.selected {
+    color: #ba8657;
+}
+
+.not-selected {
+    color: #ffffff;
+}
+
+.card-left {
+    background: #313139;
+    color: #ffffff;
+    width: 700px;
+
+    background-image:url('../img/background.png');
+    background-size: 700px 240px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+
+    -webkit-box-shadow: 11px 0px 34px -15px rgba(0,0,0,0.75), -11px 0px 34px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 0px 34px -15px rgba(0,0,0,0.75), -11px 0px 34px -15px rgba(0,0,0,0.75);
+    box-shadow: 11px 0px 34px -15px rgba(0,0,0,0.75), -11px 0px 34px -15px rgba(0,0,0,0.75);
+}
+
+.card-left img {
+    border-radius: 50%;
+    margin-left: 145px;
+    width: 115px;
+    height: 115px;
+}
+
+.card-left h2, h4 {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card-left h5 {
+    color: #ba8657;
+    text-align: center;
+}
+
+.card-left h4 {
+    opacity: .8;
+    text-align: justify;
+}
+
+.card-left-infos {
+    margin-top: 180px;
+}
+
+.card-left-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-left-socials {
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-left-socials .linkedin {
+    background: #313139;
+    border: none;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin-left: 55%;
+    background-image: url("../img/linkedin.png");
+    background-size:20px 20px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card-left-socials .github {
+    background: #313139;
+    border: none;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin-left: 132%;
+    color: #ffffff;
+    background-image:url('../img/github.png');
+    background-size:20px 20px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card-left-buttons .buttons {
+    background: #313139;
+    border: none;
+    width: 205px;
+    margin-top: 55px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #37373f;
+    padding: 23px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    max-width: 100%;
+}
+
+.scroll { 
+    margin:4px, 4px; 
+    padding:4px; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    text-align:justify; 
+} 
+
+.card-left-buttons .buttons:hover {
+    background: #37373f;
+    transition-duration: 0.3s;
+}
+
+.card-right {
+    padding: 30px;
+    position: relative;
+}
+
+.card-right h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.card-right-about-me{
+    letter-spacing: 2px;
+}
+
+.card-right-about-me h2{
+    letter-spacing: 2px;
+}
+
+.card-right-first {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #a3a2aa;
+}
+
+.card-right-text {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+    color: #77767e;
+}
+
+.card-right-info-contain {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 5fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-right-info {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: justify;
+    color: #cccbd1;
+}
+
+.spacer {
+    border-top: 1px solid #ba8657;
+}
+
+.contact-form  {
+    width: 100%;
+    font: 14px "Roboto", sans-serif;
+}
+
+.contact-form  td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.contact-form  label{
+    margin:0 0 3px 0;
+    padding-top:20px;
+    display:block;
+    font-weight: bold;
+}
+
+.contact-form  .required{
+    color:red;
+}
+
+.contact-form  input[type=submit], .contact-form  input[type=reset]{
+    border: 2px solid #ba8657;
+    background-color: transparent;
+    padding: 10px;
+    align-self: right;
+    float: right;
+    border-radius: 20px;
+    color: #ba8657;
+    transition-duration: 0.3s;
+}
+
+.contact-form  input[type=submit]:hover, .contact-form  input[type=reset]:hover{
+    border: 2px solid #D2B193;
+    background-color: #313139;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    color: #D2B193;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.contact-form  .field-textarea{
+    height: 150px;
+}
+
+.message-field {
+    height: 60px;
+}
+
+.contact-form  input[type=text], 
+
+.contact-form  input[type=email],
+
+textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #313139;
+    padding: 7px;
+    margin:0px;
+    width: 100%;
+    transition-duration: 0.3s;
+    outline: none;  
+    background: #37373f;
+    resize: none;
+}
+
+.contact-form  .long{
+    width: 100%;
+}
+
+.contact-form  input[type=text]:focus, 
+
+.contact-form  input[type=email]:focus,
+
+.contact-form  textarea:focus{
+    box-shadow: 0 0 8px #ba8657;
+    border: 1px solid #ba8657;
+}
+
+progress {
+    max-width: 100%;
+    width: 1100;
+    display: block; /* default: inline-block */
+    margin-bottom: 20px;
+    padding: 3px;
+    border: 0 none;
+    background: #37373f;
+    border-radius: 14px;
+}
+
+.progress-text {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 12px;
+    background: #ba8657; 
+}
+
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+        height: 20px;
+    }
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {  
+    border-radius: 12px;
+    background: #ba8657;
+} 
+
+.spacer-name {
+    background: #ba8657;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.bronze {
+    color: #ba8657;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.text-description {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.spacer-name h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
